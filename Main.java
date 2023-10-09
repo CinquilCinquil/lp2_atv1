@@ -9,14 +9,11 @@ class Main {
 	public static void main(String args[])
 	{
 		
-		Users.add(new User("name", "cpf", "mail", User.Role.TRAINER));
-		Animals.add(new Animal(Animal.Species.CAT, "name", "owner"));
+		Users.add(new User("joao", "123", "@mail", "Trainer"));
+		Animals.add(new Animal("Cat", "coolcat", "joao"));
 		
 		System.out.println(Users.get(0));
 		System.out.println(Animals.get(0));
-		
-		//Oloco oloco = new Oloco();
-		//System.out.println(oloco.r);
 	}
 	
 }

@@ -2,36 +2,9 @@ package lp2_atv1;
 
 class User {
 	
-	enum Role {
-		
-		TRAINER,	// Tutor de animal de estimação
-		HELPER,		// Prestador de serviços para pets
-		SELLER, 	// vendedor da ILovePets
-		;
-		
-		@Override
-		public String toString() {
-			
-			switch(this.ordinal())
-			{
-				case 0:
-					return "Trainer";
-				case 1:
-					return "Helper";
-				case 2:
-					return "Seller";
-				default:
-					return null;
-			}
-			
-		}
-		
-	}
+	private String name, cpf, email, specialty, role;
 	
-	private String name, cpf, email, specialty;
-	private Role role;
-	
-	User(String name, String cpf, String email, Role role)
+	User(String name, String cpf, String email, String role)
 	{
 		setName(name);
 		setCpf(cpf);
@@ -55,7 +28,7 @@ class User {
 		this.specialty = specialty;
 	}
 	
-	public void setRole(Role role) {
+	public void setRole(String role) {
 		this.role = role;
 	}
 	
@@ -75,7 +48,7 @@ class User {
 		return specialty;
 	}
 	
-	public Role getRole() {
+	public String getRole() {
 		return role;
 	}
 	
@@ -83,7 +56,7 @@ class User {
 	public String toString()
 	{
 		return "USER [Name: " + name + ", Cpf: " + cpf + ", Email: " + email 
-		+ ", Role: " + role.toString() + ", Specialty: " + specialty + "]";
+		+ ", Role: " + role + ", Specialty: " + specialty + "]";
 	}
 	
 }

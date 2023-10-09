@@ -2,46 +2,16 @@ package lp2_atv1;
 
 class Animal {
 	
-	enum Species {
-		
-		DOG,
-		CAT,
-		BUNNY,
-		RAT,
-		;
-		
-		@Override
-		public String toString() {
-			
-			switch(this.ordinal())
-			{
-				case 0:
-					return "Dog";
-				case 1:
-					return "Cat";
-				case 2:
-					return "Bunny";
-				case 3:
-					return "Rat";
-				default:
-					return null;
-			}
-			
-		}
-		
-	}
+	private String species, name, owner;
 	
-	private Species species;
-	private String name, owner;
-	
-	Animal(Species species, String name, String owner)
+	Animal(String species, String name, String owner)
 	{
 		setName(name);
 		setOwner(owner);
 		setSpecies(species);
 	}
 	
-	public void setSpecies(Species species) {
+	public void setSpecies(String species) {
 		this.species = species;
 	}
 	
@@ -53,7 +23,7 @@ class Animal {
 		this.owner = owner;
 	}
 	
-	public Species getSpecies() {
+	public String getSpecies() {
 		return species;
 	}
 	
@@ -67,7 +37,7 @@ class Animal {
 	
 	@Override
 	public String toString() {
-		return "ANIMAL [Species: " + species.toString() + ", Name: " + name + ", Owner's name: " + owner + "]";
+		return "ANIMAL [Species: " + species + ", Name: " + name + ", Owner's name: " + owner + "]";
 	}
 	
 }
