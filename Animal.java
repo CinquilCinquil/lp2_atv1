@@ -37,7 +37,7 @@ class Animal {
 	
 	@Override
 	public String toString() {
-		return "ANIMAL [Species: " + species + ", Name: " + name + ", Owner's name: " + owner + "]";
+		return "ANIMAL [Espécie: " + species + ", Nome: " + name + ", Nome do Dono: " + owner + "]";
 	}
 	
 }
