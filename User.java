@@ -1,10 +1,10 @@
 package lp2_atv1;
 
-class User {
+public class User {
 	
 	private String name, cpf, email, specialty, role;
 	
-	User(String name, String cpf, String email, String role)
+	public User(String name, String cpf, String email, String role)
 	{
 		setName(name);
 		setCpf(cpf);

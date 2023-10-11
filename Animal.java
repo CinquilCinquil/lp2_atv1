@@ -1,10 +1,10 @@
 package lp2_atv1;
 
-class Animal {
+public class Animal {
 	
 	private String species, name, owner;
 	
-	Animal(String species, String name, String owner)
+	public Animal(String species, String name, String owner)
 	{
 		setName(name);
 		setOwner(owner);
