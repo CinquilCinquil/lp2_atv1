@@ -1,13 +1,21 @@
 package lp2_atv1.Users;
 import lp2_atv1.User;
 
-class Vendedor extends User {
+public class Vendedor extends User {
 	
-	private String service; // tipo de serviço a ser prestado
+	private String products; // descrição dos tipos de produtos vendidos
 	
-	Vendedor(String name, String cpf, String email)
+	public Vendedor(String name, String cpf, String email)
 	{
 		super(name, cpf, email, "Vendedor da ILovePets");
+	}
+	
+	public void setProducts(String products) {
+		this.products = products;
+	}
+	
+	public String getProducts() {
+		return products;
 	}
 	
 }
