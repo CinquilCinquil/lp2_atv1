@@ -1,7 +1,7 @@
 package lp2_atv1.Animais;
 import lp2_atv1.Animal;
 
-class Coelho extends Animal
+public class Coelho extends Animal
 {
     public Coelho(String species, String name, String owner)
     {
