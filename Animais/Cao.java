@@ -11,6 +11,6 @@ class Cao extends Animal
     @Override
 	public String toString()
     {
-		return "Coelho [Espécie: " + species + ", Nome: " + name + ", Nome do Dono: " + owner + "]";
+		return "Cao [Espécie: " + species + ", Nome: " + name + ", Nome do Dono: " + owner + "]";
 	}
 }
