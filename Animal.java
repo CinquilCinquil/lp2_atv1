@@ -2,7 +2,7 @@ package lp2_atv1;
 
 public class Animal {
 	
-	private String species, name, owner;
+	protected String species, name, owner;
 	
 	public Animal(String species, String name, String owner)
 	{
