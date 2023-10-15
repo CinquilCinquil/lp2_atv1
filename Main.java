@@ -9,15 +9,20 @@ public class Main {
 	
 	public static void main(String args[])
 	{
-		Users.add(new User("joao", "123", "@mail", "Trainer"));
-		Animals.add(new Animal("Cat", "coolcat", "joao"));
+		Users.add(new Tutor("Gabriel", "123456789.10", "Gabriel@mail"));
+		Users.add(new Vendedor("Giovanna", "000000000.00", "Giovanna@mail"));
+		Users.add(new Prestador("Fernanda", "987654321.01", "Fernanda@mail"));
+		Animals.add(new Gato("Siamês", "coolcat", "João"));
+		Animals.add(new Rato("Rattus rattus", "coolrat", "Maria"));
+		Animals.add(new Cao("Shih Tzu", "cooldog", "José"));
+		Animals.add(new Coelho("Coelho-Pigmeu", "coolbunny", "Pedro"));
 		
-		Tutor t = new Tutor("joao", "123", "@mail");
+		System.out.println(Animals.get(1).toString());
+		
+		Tutor t = Users.get(0);
+		
 		t.addAnimalInCare(Animals.get(0));
 		t.printAnimalsInCare();
-		
-		System.out.println(Users.get(0));
-		System.out.println(Animals.get(0));
 	}
 	
 }
